@@ -1,0 +1,1128 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab'
+@import url(http://uk.allfont.net/allfont.css?fonts=roboto-slab-bold)
+@import url(http://uk.allfont.net/allfont.css?fonts=roboto-slab-light)
+@font-face
+	font-family: 'MuseoSansCyrl-100'
+	src: url(fonts/MuseoSansCyrl-100.eot)
+	src: url(fonts/MuseoSansCyrl-100.woff2) format("woff2"), url(fonts/MuseoSansCyrl-100.woff) format("woff"), url(fonts/MuseoSansCyrl-100.ttf) format("truetype"), url(fonts/MuseoSansCyrl-100.eot?#iefix) format("embedded-opentype")
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: 'MuseoSansCyrl-300'
+	src: url(fonts/MuseoSansCyrl-300.eot)
+	src: url(fonts/MuseoSansCyrl-300.woff2) format("woff2"), url(fonts/MuseoSansCyrl-300.woff) format("woff"), url(fonts/MuseoSansCyrl-300.ttf) format("truetype"), url(fonts/MuseoSansCyrl-300.eot?#iefix) format("embedded-opentype")
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: 'MuseoSansCyrl-500'
+	src: url(fonts/MuseoSansCyrl-500.eot)
+	src: url(fonts/MuseoSansCyrl-500.woff2) format("woff2"), url(fonts/MuseoSansCyrl-500.woff) format("woff"), url(fonts/MuseoSansCyrl-500.ttf) format("truetype"), url(fonts/MuseoSansCyrl-500.eot?#iefix) format("embedded-opentype")
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: 'MuseoSansCyrl-700'
+	src: url(fonts/MuseoSansCyrl-700.eot)
+	src: url(fonts/MuseoSansCyrl-700.woff2) format("woff2"), url(fonts/MuseoSansCyrl-700.woff) format("woff"), url(fonts/MuseoSansCyrl-700.ttf) format("truetype"), url(fonts/MuseoSansCyrl-700.eot?#iefix) format("embedded-opentype")
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: 'MuseoSansCyrl-100Italic'
+	src: url(fonts/MuseoSansCyrl-100Italic.eot)
+	src: url(fonts/MuseoSansCyrl-100Italic.woff2) format("woff2"), url(fonts/MuseoSansCyrl-100Italic.woff) format("woff"), url(fonts/MuseoSansCyrl-100Italic.ttf) format("truetype"), url(fonts/MuseoSansCyrl-100Italic.eot?#iefix) format("embedded-opentype")
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: 'MuseoSansCyrl-700Italic'
+	src: url(fonts/MuseoSansCyrl-700Italic.eot)
+	src: url(fonts/MuseoSansCyrl-700Italic.woff2) format("woff2"), url(fonts/MuseoSansCyrl-700Italic.woff) format("woff"), url(fonts/MuseoSansCyrl-700Italic.ttf) format("truetype"), url(fonts/MuseoSansCyrl-700Italic.eot?#iefix) format("embedded-opentype")
+	font-weight: normal
+	font-style: normal
+body
+	margin: auto
+	width: 1440px
+	min-width: 1440px
+	background-color: #FFF 
+%full
+	min-width: 1440px
+	max-width: 100% 
+%in
+	margin: 0 auto
+	width: 1280px
+.clear:after
+	content: ""
+	display: block
+	clear: both
+.wave
+	width: 71px
+	height: 6px 
+	margin: auto
+	margin-top: 13px 
+	margin-bottom: 25px
+	i
+		display: inline-block
+		+s(wave)
+.application
+	margin: 0 auto
+	margin-bottom: 108px
+	width: 210px 
+	font-family: 'MuseoSansCyrl-500', serif
+	-webkit-border-radius: 4px 
+	border-radius: 4px 
+	box-shadow: 0 2px 1px 0px rgba(48,59,80,1)
+	overflow: hidden
+	a
+		display: inline-block
+		text-decoration: none
+		width: 210px 
+		height: 50px
+		line-height: 50px
+		text-align: center
+		color: #F1F1F1 
+		font-size: 17px 
+		background-color: #0050B2 
+		border: 1px solid #00479E 
+		-webkit-border-radius: 2px 
+		border-radius: 4px
+		-webkit-transition: background-color 1s ease 
+		-moz-transition: background-color 1s ease 
+		-ms-transition: background-color 1s ease 
+		-o-transition: background-color 1s ease 
+		transition: background-color 1s ease 
+		&:hover
+			border: 1px solid #FF8420
+			background: linear-gradient(top, #ff8420 60%, #ffab66)
+.tittle
+	text-align: center
+	line-height: 50px
+	font-size: 38px
+	font-family: 'Roboto Slab', serif
+.top
+	margin-left: 51px 
+	position: fixed
+	top: 350px
+	width: 38px
+	height: 38px  
+	line-height: 12px 
+	-webkit-border-radius: 38px 
+	border-radius: 38px 
+	background-color: #0050B2
+	z-index: 5 
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(arrow)
+	.top__point
+		margin: auto
+		width: 3px
+		height: 3px
+		top: 0
+		margin-bottom: 2px 
+		-webkit-border-radius: 3px 
+		border-radius: 3px 
+		background-color: #FFF 
+.header
+	@extend %full  
+	height: 700px 
+	.header__in
+		@extend %in
+		.header__top
+			position: relative
+			.header__left
+				float: left
+				display: inline-block
+				margin-top: 30px 
+				+s(logo)
+			.header__right
+				width: 205px
+				float: right
+				display: inline-block
+				margin-top: 40px
+				.header__number
+					text-decoration: none
+					.header__phone
+						display: inline-block
+						margin-right: 6px
+						margin-left: 3px
+						&:before
+							content: url(../img/phone.png)
+					&:hover .header__phone:before
+						content: url(../img/orangephone.png)
+					p
+						font-weight: normal
+						font-family: 'MuseoSansCyrl-100', serif
+						text-align: right
+						font-size: 22px 
+						color: #F1F1F1 
+						display: inline-block
+					span
+						font-family: 'MuseoSansCyrl-500', serif
+				.header__callback
+					font-family: 'MuseoSansCyrl-100', serif
+					text-decoration: none
+					border-bottom: 1px solid #6f7782 
+					margin-left: 29px 
+					padding: 0 4px 
+					font-weight: normal
+					font-size: 13px
+					color: #C8C8C8 
+					display: inline-block
+					-webkit-transition: 0.5s ease 
+					-moz-transition: 0.5s ease 
+					-ms-transition: 0.5s ease 
+					-o-transition: 0.5s ease 
+					transition: 0.5s ease 
+					&:hover
+						color: #E87F2A
+						border-bottom: 1px solid #8D6B53
+				.header__callback
+					text-decoration: none
+					border-bottom: 1px solid #6f7782 
+					margin-left: 29px 
+					margin-right: 5px
+					padding: 0 4px 
+					font-weight: normal
+					font-size: 13px
+					font-family: 'MuseoSansCyrl-100', serif
+					color: #C8C8C8 
+					display: inline-block
+					&:hover
+						color: #E87F2A
+						border-bottom: 1px solid #8D6B53
+		.header__tittle 
+			margin-top: 102px 
+			line-height: 66px 
+			font-family: 'Roboto Slab Bold', arial
+			color: #F1F1F1
+			font-weight: 700   
+			font-size: 56px
+			text-align: center 
+		.header__desc
+			margin-bottom: 50px
+			font-family: 'MuseoSansCyrl-300', serif
+			color: #FFF 
+			font-size: 19px
+			line-height: 30px
+			text-align: center
+			a
+				text-decoration: none
+				color: #FFAE44
+.info
+	@extend %full
+	background-color: #F6F6F6 
+	.info__in
+		@extend %in
+		.info__iteam
+			font-family: 'MuseoSansCyrl-100', serif
+			text-align: center
+			width: 175px 
+			display: inline-block
+			vertical-align: top
+			margin: 30px 70px 20px
+			text-decoration: none
+			i
+				display: inline-block
+				vertical-align: middle
+				margin-bottom: 10px
+			p
+				text-align: center
+				vertical-align: middle
+				color: #232323
+				font-size: 15px
+			span
+				color: #FF8420 
+			.info__years
+				+s(years)
+			.info__price
+				+s(calc)
+			.info__tolerance
+				+s(tolerance)
+			.info__certificate
+				+s(certificate)
+				margin-bottom: 20px 
+.example
+	@extend %full
+	.example__in
+		@extend %in 
+		padding-top: 55px 
+		p
+			width: 858px
+			margin: 0 auto 
+			text-align: center
+			font-size: 17px
+			color: #707070 
+			line-height: 25px
+			margin-bottom: 43px
+			padding-top: 5px
+		span
+			color: #3E3F3B 
+		a
+			color: #0050B2 	
+			border-bottom: 1px solid #ABC5E6 
+			text-decoration: none	
+		.example__img
+			display: inline-block
+			.example__img-both
+				width: 320px
+				float: left
+			a
+				position: relative
+				margin: 9px 10px 
+				text-decoration: none
+				display: inline-block
+			.example__address
+				width: 180px
+				color: #FDF7F2
+				font-size: 18px
+				font-family: 'Roboto Slab', serif 
+				line-height: 28px
+				text-align: center
+				z-index: 2
+				position: absolute
+				top: 40%
+				left: 20%
+			.example__iteam
+				width: 300px
+				height: 300px
+				background: no-repeat center
+				-webkit-background-size: cover
+				-o-background-size: cover
+				background-size: cover
+				&:hover .example__orange
+					display: block 
+				.example__orange
+					position: absolute
+					top: 0
+					left: 0
+					z-index: 1 
+					width: 100%
+					height: 100%    
+					display: none 
+					background-color: rgba(255, 132, 32, 0.75)
+			.example__iteam-long
+				width: 300px
+				height: 410px 
+				background: no-repeat center
+				-webkit-background-size: cover
+				-o-background-size: cover
+				background-size: cover
+				&:hover .example__orange-long
+					display: block 
+				.example__orange-long
+					position: absolute
+					width: 100%
+					height: 100%     
+					background-color: rgba(255, 132, 32, 0.75)
+					display: none
+		.example__show-more
+			margin: auto
+			width: 150px
+			margin-top: 9px
+			margin-bottom: 50px
+			a
+				font-size: 17px
+				color: #0050B2
+				line-height: 20px
+				border-bottom: 1px dotted #8FB2DD 
+				text-decoration: none 
+				-webkit-transition: 0.3s ease 
+				-moz-transition: 0.3s ease 
+				-ms-transition: 0.3s ease 
+				-o-transition: 0.3s ease 
+				transition: 0.3s ease
+				&:hover
+					color: #FF8420
+					border-bottom: 1px dotted #FFC99D
+			i
+				display: inline-block
+				+s(show)
+				margin-right: 9px
+				vertical-align: middle
+				margin-bottom: 2px 
+		.example__img-open
+			@extend .example__img
+			display: none
+			.example__img-both
+				margin-bottom: 100px
+		.example__calculation
+			width: 1260px
+			height: 72px
+			display: inline-block
+			margin-left: 10px
+			border: 1px dashed #D7D7D7
+			-webkit-border-radius: 2px 
+			border-radius: 3px
+			padding-left: 95px 
+			margin-left: 10px
+			margin-bottom: 60px  
+			.example__calculation-doc
+				display: inline-block
+				position: relative
+				bottom: 19px
+				i
+					display: inline-block
+					+s(doc)
+				.example__calculation-tick
+					position: absolute
+					top: 4px
+					left: 117px
+					z-index: 2
+					i
+						display: inline-block
+						+s(tick)
+			.example__calculation-free
+				display: inline-block
+				line-height: 68px
+				font-family: 'Roboto Slab Light', arial
+				font-size: 22px
+				color: #1F231D 
+				margin-left: 36px
+				text-align: left
+				margin-bottom: 0
+				margin-right: 26px
+				vertical-align: top
+			.example__calculation-apply
+				width: 210px
+				display: inline-block
+				vertical-align: top
+				margin-bottom: 0
+				margin-top: 11px
+				text-decoration: none
+				font-family: 'MuseoSansCyrl-500', serif
+				text-align: center
+				line-height: 44px
+				color: #F1F1F1 
+				font-size: 17px
+				background-color: #0050B2 
+				-webkit-transition: background-color 1s ease 
+				-moz-transition: background-color 1s ease 
+				-ms-transition: background-color 1s ease 
+				-o-transition: background-color 1s ease 
+				transition: background-color 1s ease 
+				-webkit-border-radius: 4px 
+				border-radius: 4px 
+				border: 1px solid #00479E 
+				box-shadow: 0 2px 1px 0px #c7d9ee
+				&:hover
+					border: 1px solid #FF8420
+					background: linear-gradient(top, #ff8420 60%, #ffab66)
+.choice
+	@extend %full
+	height: 600px
+	.choice__in
+		margin: 0 auto
+		width: 1140px
+		padding-top: 110px
+		.choice__iteam
+			width: 500px
+			float: left
+			.choice__tittle
+				width: 345px
+				font-family: 'Roboto Slab Bold', arial
+				font-size: 38px
+				text-align: left
+				line-height: 42px
+				color: #171717 
+			.choice__wave
+				margin: 26px 0 18px
+				display: inline-block
+				+s(wave)
+				height: 6px
+			.choice__desc
+				width: 480px
+				font-size: 20px
+				color: #383838 
+				line-height: 30px
+				font-family: 'MuseoSansCyrl-100', serif
+				a
+					display: inline-block
+					color: #0050B2 
+					text-decoration: none
+					border-bottom: 1px solid #9EB8D8 
+					line-height: 18px
+					margin-top: 7px
+					font-family: 'MuseoSansCyrl-100', serif
+			.slick-dots
+				text-align: left
+				position: absolute
+				margin: 0
+				bottom: 0
+				bottom: -50px
+				left: -3px
+				right: 0
+				li
+					position: relative
+					display: inline-block
+					padding: 0 4px
+					&.slick-active
+						button
+							background: #ff8420
+							box-shadow: 1px 1px 6px rgba(255,132,32,.3), -1px -1px 6px rgba(255,132,32,.35)
+				button
+					display: block
+					width: 10px
+					height: 10px
+					background: #FFF
+					cursor: pointer
+					+hide-text
+					border-radius: 50%
+					&:hover
+						background: #f2c9a8
+.advantages
+	@extend %full
+	.advantages__in
+		padding-top: 50px
+		margin: 0 auto
+		width: 1140px
+		.advantages__iteam
+			width: 100%
+			display: inline-block 
+			margin-top: 65px
+			margin-bottom: 25px
+			p
+				font-size: 15px
+				color: #20221D 
+				font-family: 'Roboto Slab Bold', arial
+				text-align: center
+				line-height: 35px
+			.advantages__desc
+				font-size: 15px
+				color: #575757 
+				line-height: 25px
+				text-align: center
+				font-family: 'MuseoSansCyrl-100', serif
+			i
+				display: inline-block
+				text-align: center
+				margin-bottom: 15px
+			.advantages__delivery
+				width: 340px
+				display: inline-block
+				margin-bottom: 40px
+				text-decoration: none
+				margin-right: 80px
+				padding-left: 20px
+				vertical-align: top
+				i
+					+s(delivery)
+					margin-left: 110px
+			.advantages__sale
+				text-decoration: none
+				width: 300px
+				display: inline-block
+				margin-bottom: 40px
+				margin-right: 56px
+				vertical-align: top
+				i
+					+s(sale)
+					margin-left: 120px
+			.advantages__style
+				text-decoration: none
+				width: 356px
+				display: inline-block
+				margin-bottom: 40px
+				vertical-align: top
+				i
+					+s(style)
+					margin-left: 145px
+					margin-bottom: 11px
+			.advantages__accessories
+				text-decoration: none
+				width: 340px
+				display: inline-block
+				margin-bottom: 50px
+				margin-right: 80px
+				vertical-align: top
+				i
+					+s(accessories)
+					margin-left: 133px
+			.advantages__guarantee
+				text-decoration: none
+				width: 300px
+				display: inline-block
+				margin-bottom: 50px
+				margin-right: 56px
+				vertical-align: top
+				i
+					+s(guarantee)
+					margin-left: 127px
+			.advantages__supply
+				text-decoration: none
+				width: 356px
+				display: inline-block
+				margin-bottom: 50px
+				vertical-align: top
+				i
+					+s(supply)
+					margin-left: 131px
+					margin-bottom: 12px
+.project
+	@extend %full
+	position: relative
+	z-index: 1
+	height: 600px 
+	background-color: rgba(125, 125, 125, 0.75)
+	margin-bottom: 42px
+	&:before, &:after
+		content: ""
+		position: absolute
+		width: 100px
+		height: 100px
+		border-radius: 100%
+		background: #FFF
+		z-index: 4
+	&:before
+		top: -60px
+		left: -20px
+	&:after
+		top: -60px
+		right: -20px
+	.project__color
+		position: absolute
+		z-index: 2
+		width: 100%
+		height: 100%  
+		background-color: rgba(0, 0, 0, 0.5)
+		border-left: 40px solid #FFF 
+		border-right: 40px solid #FFF 
+		&:before, &:after
+			content: ""
+			position: absolute
+			width: 100px
+			height: 100px
+			border-radius: 100%
+			background: #FFF
+		&:before
+			bottom: -60px
+			left: -60px
+		&:after
+			bottom: -60px
+			right: -60px
+		.project__in
+			margin: 0 auto
+			width: 820px
+			padding-top: 190px 
+			.project__tittle
+				text-align: center
+				color: #F1F1F1
+				font-family: 'Roboto Slab Bold', arial
+				font-size: 38px 
+				line-height: 52px
+			.project__desc
+				width: 760px
+				margin: auto
+				text-align: center
+				color: #F3F3F3 
+				font-size: 17px
+				font-family: 'MuseoSansCyrl-100', serif
+				line-height: 28px
+				margin-bottom: 50px
+				a
+					text-decoration: none
+					color: #FF8420 
+.price
+	@extend %full
+	.price__in
+		@extend %in
+		p 
+			text-align: center
+			font-size: 17px
+			color: #707070 
+			line-height: 33px
+			margin-bottom: 15px
+		.price__tabs
+			width: 1134px
+			margin: 0 auto
+			list-style: none
+			text-align: center
+			ul li a:focus
+				outline: 0
+			ul li a.selected
+				background-color: #FF8420
+				-webkit-border-radius: 2px 
+				border-radius: 2px 
+				color: #FFF
+				text-decoration: none 
+				&:hover
+					background-color: #FF8420
+					-webkit-border-radius: 2px 
+					border-radius: 2px 
+					color: #FFF
+					text-decoration: none
+			li
+				display: inline
+				margin-right: 15px 
+			a
+				display: inline-block
+				line-height: 31px
+				color: #FF8420
+				text-decoration-line: dotted
+				font-family: 'MuseoSansCyrl-100', serif
+				font-size: 17px 
+				padding-left: 7px 
+				padding-right: 9px
+				-webkit-transition: background-color 0.5s ease 
+				-moz-transition: background-color 0.5s ease 
+				-ms-transition: background-color 0.5s ease 
+				-o-transition: background-color 0.5s ease 
+				transition: background-color 0.5s ease 
+				&:hover
+					background-color: #FF8420
+					-webkit-border-radius: 2px 
+					border-radius: 2px 
+					color: #FFF
+					text-decoration: none 
+			i
+				display: inline-block
+				+s(check)
+				margin-right: 7px
+				vertical-align: middle
+			.price__list
+				width: 100% 
+				margin-top: 38px
+				display: inline-block
+				.price__iteam-left
+					float: left
+					width: 504px
+					display: inline-block
+				.price__iteam-right
+					float: right
+					width: 518px
+					display: inline-block
+				.price__list-tittle
+					color: #1F231D
+					font-size: 26px
+					font-family: 'Roboto Slab Bold', arial
+					text-align: center
+					line-height: 48px
+				.price__list-properties
+					color: #777 
+					font-size: 15px
+					font-family: 'Roboto Slab Light', arial
+					text-align: center
+					line-height: 20px 
+				.price__list-img
+					width: 504px
+					margin-top: 36px
+					position: relative
+					i
+						display: inline-block
+						+s(wave)
+						height: 6px
+						margin: 0
+						margin-top: -20px
+				.price__without-delivery
+					position: absolute
+					text-align: left
+					top: 294px
+					left: 230px
+					p
+						text-align: left
+						font-size: 17px
+						color: #000 
+						font-family: 'MuseoSansCyrl-100Italic', serif
+					span
+						font-size: 60px
+						color: #0050B2 
+						line-height: 34px
+						font-family: 'MuseoSansCyrl-700Italic', serif
+						margin-left: 8px
+					.price__currency
+						font-size: 30px
+						line-height: 26px
+						font-family: 'MuseoSansCyrl-100Italic', serif
+						height: 30px
+						vertical-align: top
+					.price__orange-text
+						margin-left: 0
+						line-height: 10px 
+						color: #FF8420
+						font-size: 12px
+					.price__without
+						margin-left: 0
+						line-height: 10px 
+						font-size: 12px
+						color: #383838  
+				.price__desc
+					margin-top: 33px
+					p
+						color: #383838 
+						font-family: 'MuseoSansCyrl-300', serif
+						text-align: center
+						font-size: 15px
+						line-height: 26px
+					span
+						font-family: 'MuseoSansCyrl-100Italic'
+						color: #8C8C8C 
+						display: block
+		.price__show-more
+			margin: auto
+			width: 150px
+			margin-top: 35px
+			margin-bottom: 55px
+			a
+				font-size: 17px
+				color: #0050B2
+				line-height: 20px
+				border-bottom: 1px dotted #8FB2DD 
+				text-decoration: none 
+				-webkit-transition: 0.3s ease 
+				-moz-transition: 0.3s ease 
+				-ms-transition: 0.3s ease 
+				-o-transition: 0.3s ease 
+				transition: 0.3s ease 
+				&:hover
+					color: #FF8420
+					border-bottom: 1px dotted #FFC99D
+			i
+				display: inline-block
+				+s(show)
+				margin-right: 12px
+				vertical-align: middle
+				margin-bottom: 2px
+		.price__tabs-open
+			@extend .price__tabs
+			display: none	
+.reviews
+	@extend %full
+	background-color: #EBEBEB 
+	margin-top: 80px
+	padding-bottom: 30px
+	.reviews__tittle
+		margin-top: 20px
+		text-align: center
+		line-height: 130px 
+		color: #171717 
+		font-family: 'Roboto Slab Bold', arial
+		font-size: 32px	
+	.reviews__docs
+		width: 1324px 
+		margin: 0 auto
+		padding-top: 20px
+		.reviews__docs-in
+			width: 1324px
+			display: inline-block
+		.reviews__doc
+			width: 267px
+			height: 378px
+			float: left
+			margin: 0 32px 40px
+			position: relative
+			&:hover .reviews__student
+				display: none 
+			.reviews__img
+				position: relative
+				width: 100%
+				height: 100%  
+				float: left
+				-webkit-transition: 0.5s ease 
+				-moz-transition: 0.5s ease 
+				-ms-transition: 0.5s ease 
+				-o-transition: 0.5s ease 
+				transition: 0.5s ease 
+				&:hover .reviews__bcg
+					background-color: rgba(0, 29, 64, 0)
+				&:hover
+					transform: translate(0,-20px)
+					-webkit-transform: translate(0,-20px)
+					-o-transform: translate(0,-20px)
+					-moz-transform: translate(0,-20px)
+					position: static
+				.reviews__bcg
+					position: absolute
+					z-index: 1
+					width: 267px
+					height: 378px
+					background-color: rgba(0, 29, 64, 0.6)
+			.reviews__student
+				bottom: -9px
+				left: 20px
+				position: absolute
+				display: inline-block
+				z-index: 2
+				-webkit-transition: 1s ease 
+				-moz-transition: 1s ease 
+				-ms-transition: 1s ease 
+				-o-transition: 1s ease 
+				transition: 1s ease 
+				.reviews__student-photo
+					width: 48px
+					height: 48px
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+					border: 1px solid  #FFF 
+					float: left
+					box-shadow: 1px 1px 6px rgba(107,122,142,.4), -1px -1px 6px rgba(107,122,142,.4)
+				p
+					vertical-align: top
+					display: inline-block
+					color: #D9DDE3
+					text-align: left
+					font-size: 15px 
+					line-height: 38px
+					margin-left: 6px 
+					font-family: 'MuseoSansCyrl-100Italic', serif 
+	.slick-dots button:hover
+		background: #939393
+.process
+	@extend %full
+	.process__in
+		margin: 0 auto
+		width: 1100px
+		padding: 48px 0 54px
+		p
+			text-align: center
+			font-size: 17px
+			font-family: 'MuseoSansCyrl-100', serif
+			color: #707070 
+			line-height: 38px
+		.process__steps
+			position: relative
+			margin-top: 48px
+			width: 100% 
+			display: inline-block
+			.process__number
+				font-family: 'MuseoSansCyrl-500', serif
+				font-size: 14px
+				text-align: left
+				color: #707070 
+				line-height: 28px
+				-webkit-transition: 0.3s ease 
+				-moz-transition: 0.3s ease 
+				-ms-transition: 0.3s ease 
+				-o-transition: 0.3s ease 
+				transition: 0.3s ease
+			.process__name
+				font-family: 'MuseoSansCyrl-500', serif
+				font-size: 18px
+				text-align: left
+				color: #1F231D
+				line-height: 26px
+				margin-bottom: 3px
+				-webkit-transition: 0.3s ease 
+				-moz-transition: 0.3s ease 
+				-ms-transition: 0.3s ease 
+				-o-transition: 0.3s ease 
+				transition: 0.3s ease
+			.process__desc
+				font-family: 'MuseoSansCyrl-100', serif
+				font-size: 15px
+				color: #1F231D
+				text-align: left  
+				line-height: 25px
+			.process__steps-left
+				width: 440px
+				display: inline-block
+				float: left
+			.process__steps-right
+				width: 415px
+				display: inline-block
+				float: right
+			a
+				display: inline-block
+				text-decoration: none
+			.process__step1
+				margin-bottom: 42px 
+				&:hover .process__number
+					color: #0050B2 
+				&:hover .process__name
+					color: #FF8420
+				&:hover .process__btn1
+					transform: scale(4)
+					transition-delay: 0
+			.process__step2
+				margin: 85px 0 44px  
+				&:hover .process__number
+					color: #0050B2 
+				&:hover .process__name
+					color: #FF8420 
+				&:hover .process__btn2
+					transform: scale(4)
+					transition-delay: 0
+			.process__step3
+				margin-bottom: 50px 
+				&:hover .process__number
+					color: #0050B2 
+				&:hover .process__name
+					color: #FF8420 
+				&:hover .process__btn3
+					transform: scale(4)
+					transition-delay: 0
+			.process__step4
+				margin-bottom: 55px
+				&:hover .process__number
+					color: #0050B2 
+				&:hover .process__name
+					color: #FF8420 
+				&:hover .process__btn4
+					transform: scale(4)
+					transition-delay: 0 
+			.process__line
+				position: absolute
+				z-index: 1
+				width: 1px
+				height: 365px
+				top: 0
+				right: 50%
+				background-color: #D2D2D2 
+			.process__line1
+				z-index: 1
+				position: absolute
+				background-color: #D2D2D2 
+				width: 110px
+				height: 1px
+				top: 75px
+				left: 440px
+			.process__line2
+				@extend .process__line1
+				top: 161px
+				left: 550px
+			.process__line3
+				@extend .process__line1
+				top: 233px
+			.process__line4
+				@extend .process__line2
+				top: 304px
+			.process__btn1
+				z-index: 2
+				position: absolute
+				width: 9px
+				height: 9px
+				-webkit-border-radius: 9px 
+				border-radius: 50% 
+				top: 71px
+				left: 545px
+				background-color: #FF8420
+				transition: all 0.2s linear 0.1s
+				transform: scale(1) 
+			.process__btn2
+				@extend .process__btn1
+				top: 157px
+			.process__btn3
+				@extend .process__btn1
+				top: 229px
+			.process__btn4
+				@extend .process__btn1
+				top: 300px
+.offer
+	@extend %full
+	height: 600px
+	.offer__in
+		margin: 0 auto
+		width: 1100px
+		padding-top: 105px
+		a
+			text-decoration: none
+		.offer__tittle
+			text-align: center
+			color: #F1F1F1
+			font-family: 'Roboto Slab Bold', arial
+			font-size: 36px 
+			line-height: 50px
+		p
+			margin-top: 32px
+			font-size: 17px
+			font-family: 'MuseoSansCyrl-100Italic', serif
+			text-align: center
+			color: #FFF 
+		.offer__number
+			margin-top: 19px
+			font-family: 'MuseoSansCyrl-100', serif
+			text-align: center
+			font-size: 50px
+			color: #FF8420
+			line-height: 40px
+			a
+				color: #FF8420
+			span
+				font-family: 'MuseoSansCyrl-700', serif
+		.offer__desc
+			font-size: 15px
+			color: #D2D2D2 
+			line-height: 23px
+			margin-bottom: 30px
+			a
+				color: #FF8420 
+				border-bottom: 1px solid #613E27 
+				text-decoration: none
+		.offer__application
+			margin: 0 auto
+			margin-bottom: 108px
+			width: 280px 
+			font-family: 'MuseoSansCyrl-100', serif
+			-webkit-border-radius: 4px 
+			border-radius: 4px 
+			box-shadow: 0 2px 1px 0px rgba(48,59,80,1)
+			overflow: hidden
+			a
+				display: inline-block
+				text-decoration: none
+				width: 100%  
+				height: 60px
+				line-height: 60px
+				text-align: center
+				color: #F1F1F1 
+				font-size: 24px 
+				background-color: #0050B2 
+				-webkit-transition: background-color 1s ease 
+				-moz-transition: background-color 1s ease 
+				-ms-transition: background-color 1s ease 
+				-o-transition: background-color 1s ease 
+				transition: background-color 1s ease 
+				border: 1px solid #00479E 
+				-webkit-border-radius: 2px 
+				border-radius: 4px
+				&:hover
+					border: 1px solid #FF8420
+					background: linear-gradient(top, #ff8420 60%, #ffab66)
+.footer
+	@extend %full
+	.footer__in
+		margin: 0 auto
+		width: 1260px
+		position: relative
+		p
+			font-size: 14px				
+			font-family: 'MuseoSansCyrl-100', serif
+			color: #363636 
+		span
+			color: #0050B2
+			margin-right: 15px
+		a
+			text-decoration: none
+		.footer__logo
+			width: 10px
+			height: 5px
+			display: inline-block
+			+s(layer)
+			vertical-align: middle
+			margin: 0 80px 0 82px 
+		.footer__copyright
+			display: inline-block
+			line-height: 130px
+		.footer__adress	
+			margin-right: 7px
+			display: inline-block
+			line-height: 130px
+		.footer__phone
+			display: inline-block
+			line-height: 130px
+		.footer__top 
+			position: absolute
+			top: -18px
+			left: 610px
+			width: 38px
+			height: 38px 
+			-webkit-border-radius: 38px 
+			border-radius: 38px 
+			background-color: #ff8420
+			i
+				display: inline-block
+				vertical-align: middle
+				margin-left: 8px
+				margin-top: 7px
+				+s(arrow)
+			 
+
+		
+
+			
